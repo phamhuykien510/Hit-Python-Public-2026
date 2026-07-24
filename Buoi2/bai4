@@ -1,0 +1,8 @@
+N = int(input("Nhập số xu: "))
+chai = N // 28
+vo_chai = chai
+while vo_chai >= 3:
+    bia_doi = vo_chai // 3
+    chai += bia_doi
+    vo_chai = vo_chai % 3 + bia_doi
+print("Số chai bia có thể mua được là:", chai)

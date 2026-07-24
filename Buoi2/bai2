@@ -1,0 +1,34 @@
+
+ngay = int(ngay)
+thang = int(thang)
+print("Nhập ngày và tháng:")
+ngay, thang = input().split()
+so_ngay_trong_thang = [31, 28, 31, 30, 31, 30,
+                       31, 31, 30, 31, 30, 31]
+if thang < 1 or thang > 12 or ngay < 1 or ngay > so_ngay_trong_thang[thang - 1]:
+    print("Ngày hoặc tháng không hợp lệ")
+else:
+    if (ngay >= 21 and thang == 3) or (ngay <= 19 and thang == 4):
+        print("Bạch Dương")
+    elif (ngay >= 20 and thang == 4) or (ngay <= 20 and thang == 5):
+        print("Kim Ngưu")
+    elif (ngay >= 21 and thang == 5) or (ngay <= 20 and thang == 6):
+        print("Song Tử")
+    elif (ngay >= 21 and thang == 6) or (ngay <= 22 and thang == 7):
+        print("Cự Giải")
+    elif (ngay >= 23 and thang == 7) or (ngay <= 22 and thang == 8):
+        print("Sư Tử")
+    elif (ngay >= 23 and thang == 8) or (ngay <= 22 and thang == 9):
+        print("Xử Nữ")
+    elif (ngay >= 23 and thang == 9) or (ngay <= 22 and thang == 10):
+        print("Thiên Bình")
+    elif (ngay >= 23 and thang == 10) or (ngay <= 21 and thang == 11):
+        print("Bọ Cạp")
+    elif (ngay >= 22 and thang == 11) or (ngay <= 21 and thang == 12):
+        print("Nhân Mã")
+    elif (ngay >= 22 and thang == 12) or (ngay <= 19 and thang == 1):
+        print("Ma Kết")
+    elif (ngay >= 20 and thang == 1) or (ngay <= 18 and thang == 2):
+        print("Bảo Bình")
+    elif (ngay >= 19 and thang == 2) or (ngay <= 20 and thang == 3):
+        print("Song Ngư")
